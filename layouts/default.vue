@@ -25,6 +25,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   color: $font-color;
+  min-width: 600px;
 }
 
 *,

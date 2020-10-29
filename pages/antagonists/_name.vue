@@ -13,12 +13,8 @@ export default {
     }
   },
   methods: {
-    checkParamName: (param) => {
-      if (param === 'nintendo') {
-        return 'Nintendo'
-      } else if (param === 'xbox') {
-        return 'Xbox'
-      }
+    checkParamName (param) {
+      return param === 'nintendo' ? 'Nintendo' : 'Xbox'
     }
   }
 }

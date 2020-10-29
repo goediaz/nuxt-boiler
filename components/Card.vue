@@ -1,7 +1,7 @@
 <template>
   <article class="card-component">
     <div class="left-container">
-      <img :src="getImgSrc()">
+      <img :src="getImgSrc()" :alt="imgName">
     </div>
     <div class="right-container">
       <div v-if="isBlogPost" class="card-header">
@@ -11,9 +11,9 @@
       <p class="card-extract">
         {{ extract }}
       </p>
-      <nuxt-link v-if="!isBlogPost" :to="link">
-        Go to Nintendo
-      </nuxt-link>
+      <div v-if="!isBlogPost" class="button-container">
+        <Button :text="buttonText" :link="link" />
+      </div>
     </div>
   </article>
 </template>
@@ -27,6 +27,7 @@ export default {
       imgName: 'nintendo_logo',
       postTitle: 'Title',
       postDate: '20/12/2020',
+      buttonText: 'Go to Nintendo',
       extract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     }
   },
@@ -42,7 +43,6 @@ export default {
   .card-component {
     display: flex;
     flex-direction: row;
-    // margin: 0px 10px 0px 10px;
     text-align: center;
     flex: 1;
     border-bottom: 0.5px solid $tertiary-color;
@@ -52,7 +52,7 @@ export default {
       justify-content: center;
       align-items: center;
       img {
-      height: 150px;
+        height: 150px;
       }
     }
     .right-container {
@@ -69,18 +69,6 @@ export default {
       }
       .card-extract {
         margin-bottom: 20px;
-      }
-      a {
-        font-size: 18px;
-        padding: 0.3em 1.2em;
-        margin: 0 0.3em 0.3em 0;
-        border-radius: 2em;
-        text-decoration :none;
-        font-weight: 300;
-        background-color: $secondary-color;
-        text-align: center;
-        max-width: 165px;
-        color: $button-font-color;
       }
     }
   }

@@ -2,7 +2,7 @@
   <header class="header-component">
     <div class="left-container">
       <div class="website-logo">
-        <img src="~/assets/img/logo.png">
+        <img src="~/assets/img/logo.png" alt="logo">
       </div>
     </div>
     <div class="right-container">
@@ -61,7 +61,6 @@
     }
     .right-container {
       width: 70%;
-      min-width: 650px;
       nav {
         height: 100%;
         ul {
@@ -73,6 +72,7 @@
           height: 100%;
           li {
             flex: 1;
+            text-align: center;
             a {
               font-size: 20px;
               text-align: center;
