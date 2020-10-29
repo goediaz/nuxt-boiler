@@ -1,18 +1,18 @@
 <template>
   <article class="card-component">
     <div class="left-container">
-      <img :src="getImgSrc()" :alt="imgName">
+      <img :src="getImgSrc()" :alt="cardData.imgName">
     </div>
     <div class="right-container">
-      <div v-if="isBlogPost" class="card-header">
-        <h3>{{ postTitle }}</h3>
-        <p>{{ postDate }}</p>
+      <div v-if="cardData.isBlogPost" class="card-header">
+        <h3>{{ cardData.postTitle }}</h3>
+        <p>{{ cardData.postDate }}</p>
       </div>
       <p class="card-extract">
-        {{ extract }}
+        {{ cardData.extract }}
       </p>
-      <div v-if="!isBlogPost" class="button-container">
-        <Button :text="buttonText" :link="link" />
+      <div v-if="!cardData.isBlogPost" class="button-container">
+        <Button :text="cardData.buttonText" :link="cardData.buttonLink" />
       </div>
     </div>
   </article>
@@ -20,20 +20,19 @@
 
 <script>
 export default {
-  data () {
-    return {
-      link: '/antagonists/nintendo',
-      isBlogPost: false,
-      imgName: 'nintendo_logo',
-      postTitle: 'Title',
-      postDate: '20/12/2020',
-      buttonText: 'Go to Nintendo',
-      extract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  props: {
+    cardData: {
+      type: Object,
+      default: () => {},
+      validation: (prop) => {
+        return Object.prototype.hasOwnProperty.call(prop, 'buttonLink') && Object.prototype.hasOwnProperty.call(prop, 'imgName') && Object.prototype.hasOwnProperty.call(prop, 'buttonText') && Object.prototype.hasOwnProperty.call(prop, 'extract')
+      },
+      required: true
     }
   },
   methods: {
     getImgSrc () {
-      return require(`../assets/img/${this.imgName}.png`)
+      return require(`../assets/img/${this.cardData.imgName}`)
     }
   }
 }
@@ -48,7 +47,7 @@ export default {
     border-bottom: 0.5px solid $tertiary-color;
     .left-container {
       display: flex;
-      width: 30%;
+      min-width: 20%;
       justify-content: center;
       align-items: center;
       img {
