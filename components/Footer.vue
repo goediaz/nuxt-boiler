@@ -9,7 +9,7 @@
     display: flex;
     min-height: 40px;
     max-height: 40px;
-    background-color: $secondary-color;
+    background-color: $tertiary-color;
     color: #f5f5f7;
     align-items: center;
     justify-content: center;

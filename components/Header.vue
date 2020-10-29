@@ -1,11 +1,11 @@
 <template>
   <header class="header-component">
-    <div class="right-container">
+    <div class="left-container">
       <div class="website-logo">
         <img src="~/assets/img/logo.png">
       </div>
     </div>
-    <div class="left-container">
+    <div class="right-container">
       <nav>
         <ul>
           <li>
@@ -42,7 +42,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    .right-container {
+    .left-container {
         display: flex;
         width: 30%;
         align-content: center;
@@ -59,7 +59,7 @@
         }
       }
     }
-    .left-container {
+    .right-container {
       width: 70%;
       min-width: 650px;
       nav {

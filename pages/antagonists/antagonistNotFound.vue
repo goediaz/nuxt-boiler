@@ -1,6 +1,6 @@
 <template>
   <div class="antagonist-not-found-page">
-    Game console not found.
+    Game company not found.
   </div>
 </template>
 

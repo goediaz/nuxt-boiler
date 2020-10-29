@@ -37,5 +37,7 @@ html {
 .main-container {
   margin: 0 auto;
   min-height: calc(100vh - 100px);
+  overflow: auto;
+  display: flex;
 }
 </style>

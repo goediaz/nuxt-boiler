@@ -6,9 +6,6 @@
 
 <script>
 export default {
-  validate ({ params }) {
-    return params.name
-  },
   middleware: 'antagonistNotFound',
   data () {
     return {
