@@ -1,4 +1,4 @@
-# nuxt-boiler
+# nuxt-boilerplate
 
 ## Build Setup
 
