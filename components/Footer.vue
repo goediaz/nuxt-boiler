@@ -1,6 +1,6 @@
 <template>
   <footer class="footer-component">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Hello. I'm your friendly footer. Imformation gathered from Wikipedia and varios gaming news sites.
   </footer>
 </template>
 

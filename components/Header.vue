@@ -4,11 +4,9 @@
       <nav>
         <ul>
           <li>
-            <nuxt-link to="/">
-              <img src="~/assets/img/logo.png" alt="logo">
-            </nuxt-link>
+            <Logo />
           </li>
-          <li v-for="item in headerData" :key="item.name">
+          <li v-for="item in headerData" :key="item.name" :title="item.name">
             <nuxt-link :to="item.link">
               {{ item.name }}
             </nuxt-link>
@@ -78,10 +76,6 @@ export default {
               color: $font-color;
               &:hover {
               color: grey;
-              text-decoration: underline;
-            }
-            img {
-              height: 50px;
             }
           }
         }

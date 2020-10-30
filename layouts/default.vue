@@ -16,7 +16,9 @@ html {
     Roboto,
     'Helvetica Neue',
     Arial,
-    sans-serif;
+    sans-serif,
+    'Controllers',
+    'StreetFighter';
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
