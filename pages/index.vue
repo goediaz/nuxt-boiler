@@ -12,20 +12,8 @@
 </template>
 
 <script>
-// import data from '~/static/data/home.json'
-
 export default {
-  // async asyncData({ req, isServer, params, store }) {
-  // const data = {}
-
-  // if (process.server) {
-  //   data = JSON.parse(require('fs').readFileSync('../static/data/home.json', 'utf8'))
-  // } else {
-  //   data = await axios.get('/data/home.json').then(res => res.data)
-  // }
-
-  // return { data }
-  // },
+  middleware: 'saveHomeData',
   data () {
     return {
       nintendoCardData: this.getNintendoCardData(),
@@ -34,21 +22,10 @@ export default {
   },
   methods: {
     getNintendoCardData () {
-      // console.log(data);
-      return {
-        imgName: 'nintendo_logo.png',
-        buttonLink: '/antagonists/nintendo',
-        buttonText: 'Go to Nintendo',
-        extract: 'The Nintendo Company, Ltd. is a Japanese multinational consumer electronics and video game company headquartered in Kyoto. The company was founded in 1889 as Nintendo Karuta by craftsman Fusajiro Yamauchi and originally produced handmade hanafuda playing cards. After venturing into various lines of business during the 1960s and acquiring a legal status as a public company under the current company name, Nintendo distributed its first video game console, the Color TV-Game, in 1977. It gained international recognition with the release of the Nintendo Entertainment System in 1985.'
-      }
+      return this.$store.state.homeData.nintendo
     },
     getXboxCardData () {
-      return {
-        imgName: 'xbox_logo.png',
-        buttonLink: '/antagonists/xbox',
-        buttonText: 'Go to Xbox',
-        extract: 'Xbox is a video gaming brand created and owned by Microsoft. It represents a series of video game consoles developed by Microsoft, with three consoles released in the sixth, seventh, and eighth generations, respectively. The brand also represents applications (games), streaming services, an online service by the name of Xbox Live, and the development arm by the name of Xbox Game Studios. The brand was first introduced in the United States in November 2001, with the launch of the original Xbox console.'
-      }
+      return this.$store.state.homeData.xbox
     }
   }
 }
