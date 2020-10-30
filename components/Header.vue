@@ -1,13 +1,13 @@
 <template>
   <header class="header-component">
-    <div class="left-container">
-      <div class="website-logo">
-        <img src="~/assets/img/logo.png" alt="logo">
-      </div>
-    </div>
-    <div class="right-container">
+    <div class="container">
       <nav>
         <ul>
+          <li>
+            <nuxt-link to="/">
+              <img src="~/assets/img/logo.png" alt="logo">
+            </nuxt-link>
+          </li>
           <li v-for="item in headerData" :key="item.name">
             <nuxt-link :to="item.link">
               {{ item.name }}
@@ -29,10 +29,6 @@ export default {
   methods: {
     formatHeaderData () {
       return [
-        {
-          name: 'Home',
-          link: '/'
-        },
         {
           name: 'Nintendo',
           link: '/antagonists/nintendo'
@@ -59,25 +55,8 @@ export default {
     display: flex;
     flex-direction: row;
     width: 100%;
-    .left-container {
-        display: flex;
-        width: 30%;
-        align-content: center;
-        min-width: 70px;
-      .website-logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 5px;
-        img {
-          height: 50px;
-        }
-      }
-    }
-    .right-container {
-      width: 70%;
+    .container {
+      width: 100%;
       nav {
         height: 100%;
         ul {
@@ -90,6 +69,7 @@ export default {
           li {
             flex: 1;
             text-align: center;
+            max-width: 200px;
             a {
               font-size: 20px;
               text-align: center;
@@ -99,6 +79,9 @@ export default {
               &:hover {
               color: grey;
               text-decoration: underline;
+            }
+            img {
+              height: 50px;
             }
           }
         }
