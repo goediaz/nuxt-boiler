@@ -1,8 +1,7 @@
 <template>
   <section class="home-page-container">
     <div class="cards-container">
-      <Card :card-data="nintendoCardData" />
-      <Card :card-data="xboxCardData" />
+      <Card v-for="console in jsonData" :key="console.name" :card-data="getConsoleData(console.name)" />
       <div class="blog-section">
         <p>Want to more ?</p>
         <Button link="/blog" text="Go to the Blog" />
@@ -13,19 +12,21 @@
 
 <script>
 export default {
-  middleware: 'saveHomeData',
+  middleware: 'getAndSaveHomeData',
+  fetch () {
+    this.updateConsoleData()
+  },
   data () {
     return {
-      nintendoCardData: this.getNintendoCardData(),
-      xboxCardData: this.getXboxCardData()
+      jsonData: []
     }
   },
   methods: {
-    getNintendoCardData () {
-      return this.$store.state.homeData.nintendo
+    getConsoleData (consoleName) {
+      return this.$store.state.homeData[consoleName]
     },
-    getXboxCardData () {
-      return this.$store.state.homeData.xbox
+    updateConsoleData () {
+      this.jsonData = this.$store.state.homeData
     }
   }
 }

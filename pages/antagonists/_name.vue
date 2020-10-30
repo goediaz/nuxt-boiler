@@ -1,20 +1,20 @@
 <template>
   <div class="antagonist-page-container">
-    {{ name }}
+    {{ antagonistData }}
   </div>
 </template>
 
 <script>
 export default {
-  middleware: 'antagonistNotFound',
+  middleware: ['antagonistNotFound', 'getAndSaveAntagonistsData'],
   data () {
     return {
-      name: this.checkParamName(this.$route.params.name)
+      antagonistData: this.checkParamName(this.$route.params.name)
     }
   },
   methods: {
     checkParamName (param) {
-      return param === 'nintendo' ? 'Nintendo' : 'Xbox'
+      return param === 'nintendo' ? this.$store.getters.getNintendoData : this.$store.getters.getXboxData
     }
   }
 }
@@ -23,8 +23,9 @@ export default {
 <style lang="scss" scoped>
   .antagonist-page-container {
     display: flex;
-    font-size: 50px;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    font-size: 50px;
   }
 </style>
