@@ -42,9 +42,10 @@ export default {
   .card-component {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: center;
     flex: 1;
     border-bottom: 0.5px solid $tertiary-color;
+    width: 100%;
     .left-container {
       display: flex;
       min-width: 20%;
@@ -68,6 +69,7 @@ export default {
       }
       .card-extract {
         margin-bottom: 20px;
+        max-width: 900px;
       }
     }
   }

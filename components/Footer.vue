@@ -1,6 +1,6 @@
 <template>
   <footer class="footer-component">
-    Hello. I'm your friendly footer. Imformation gathered from Wikipedia and varios gaming news sites.
+    Hello. I'm your friendly footer. Imformation gathered from Wikipedia and various gaming news sites.
   </footer>
 </template>
 

@@ -3,7 +3,7 @@
     <div class="cards-container">
       <Card v-for="console in jsonData" :key="console.name" :card-data="getConsoleData(console.name)" />
       <div class="blog-section">
-        <p>Want to more ?</p>
+        <p>Want more ?</p>
         <Button link="/blog" text="Go to the Blog" />
       </div>
     </div>

@@ -1,6 +1,6 @@
 {
   "nintendo" : {
-    "bannerSrc": "",
+    "bannerSrc": "nintendo_banner",
     "extract": "The Nintendo Company, Ltd. is a Japanese multinational consumer electronics and video game company headquartered in Kyoto. The company was founded in 1889 as Nintendo Karuta by craftsman Fusajiro Yamauchi and originally produced handmade hanafuda playing cards. After venturing into various lines of business during the 1960s and acquiring a legal status as a public company under the current company name, Nintendo distributed its first video game console, the Color TV-Game, in 1977. It gained international recognition with the release of the Nintendo Entertainment System in 1985.",
     "facts": [
       "As a onetime manufacturer of simple diversions like cards and other hand-held items, Nintendo was widely thought to have chosen its name as a reference to good fortune: “leave luck to heaven” was one common interpretation. (Nin means “let someone do,” while do can mean a temple or sanctuary.) But since no archival material from their inception survived, no one can be completely certain what founder Fusajiro Yamauchi had in mind. Hiroshi Yamauchi, the Nintendo president who passed away in 2013, once said that while the explanation was a reasonable guess, even he had no real idea what “Nintendo” was in reference to.",
@@ -13,10 +13,17 @@
       "The National Academy of Television Arts and Sciences isn’t above recognizing achievements outside of sitcoms and fictional ‘60s ad agencies. In 2007, they bestowed a (belated) Technological and Engineering Emmy Award on Nintendo for their “D-pad” innovation, the directional button that replaced the joy stick in home game systems.",
       "Nintendo of America operates out of Redmond, Washington, and the building’s design accents are what you’d expect from the House Mario Built. Bathroom signs have silhouettes of the plumber and his princess; conference rooms are named after Zelda and other Nintendo game characters; benches in the lobby are shaped like the D-pads, although that appears to have been simply a happy coincidence. The furniture provider didn’t do it on purpose.",
       "The coming years will see a series of Nintendo-themed amusement park additions popping up around the globe. In addition to locations at Universal Studios in Orlando, Florida and Hollywood, California, fans will also be able to visit Universal Studios in Osaka, Japan, where guests will purportedly be able to enter a Mario landscape through--what else--a green pipe. The Osaka location could be open as early as 2020."
+    ],
+    "stats" : [
+      "Nintendo Switch sold 7.63 million units worldwide in 2017.",
+      "Nintendo DS is Nintendo’s most sold product worldwide with 154.02 million units moved.",
+      "Mario Kart 8 Deluxe is the most sold game on Nintendo Switch with over 19 million units.",
+      "Nintendo Wii is the fifth highest-selling console of all time with 101.64 million copies distributed worldwide.",
+      "Nintendo Switch accounts for 85% of Nintendo’s yearly revenue."
     ]
   },
   "xbox" : {
-    "bannerSrc" : "",
+    "bannerSrc" : "xbox_banner",
     "extract": "Xbox is a video gaming brand created and owned by Microsoft. It represents a series of video game consoles developed by Microsoft, with three consoles released in the sixth, seventh, and eighth generations, respectively. The brand also represents applications (games), streaming services, an online service by the name of Xbox Live, and the development arm by the name of Xbox Game Studios. The brand was first introduced in the United States in November 2001, with the launch of the original Xbox console.",
     "facts": [
       "The logo and branding are green because that was the only colour the designer, Horace Luke, had available after all his nice marker pens were stolen - at least according to Seamus Blackley. Apparently it was 'the green nobody wanted'.",
@@ -29,6 +36,13 @@
       "The original Xbox announcement was a bit of a shock for some. The original Xbox was designed all the way down the line alongside processor manufacturer, AMD. However, two days before the reveal, the decision was made to switch to Intel - and some AMD representatives only found out in the crowd on the day of truth. 'I could see all the AMD guys looking like they're going to kill themselves', recalls Blackley.",
       "To plan for how to release alongside the PS3, Peter Moore recalls 'wargaming' a scenario with the 360 team. He played Ken Kutaragi, with the sole aim of destroying the 360 launch. They failed to include Nintendo, who, as Phil Spencer puts it 'destroyed both of us [Microsoft and Sony]' with the Wii.",
       "There's a conspiracy theory about original Xbox's failure in Japan. Xbox has always had a hard time out east. After the bafflement at the Duke controller, a rumour went around that the disc drive would slightly scratch discs as it ran - something Peter Moore says he thinks is down to 'industrial espionage'. Perhaps wisely, he won't say more on the subject."
+    ],
+    "stats" : [
+      "2.5 billion is the number of gamers on a global scale. ",
+      "In 2019, the gaming industry generated $152.1 billion.",
+      "Xbox Live reached 65 million users monthly in 2020.",
+      "Xbox One sales amounted to 51.51 million units in 2020.",
+      "Xbox Series X will be released on the 26th of November 2020"
     ]
   }
 }
