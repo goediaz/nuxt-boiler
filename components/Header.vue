@@ -8,24 +8,9 @@
     <div class="right-container">
       <nav>
         <ul>
-          <li>
-            <nuxt-link to="/">
-              Home
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/antagonists/nintendo">
-              Nintendo
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/antagonists/xbox">
-              Xbox
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/blog">
-              Blog
+          <li v-for="item in headerData" :key="item.name">
+            <nuxt-link :to="item.link">
+              {{ item.name }}
             </nuxt-link>
           </li>
         </ul>
@@ -33,6 +18,38 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      headerData: this.formatHeaderData()
+    }
+  },
+  methods: {
+    formatHeaderData () {
+      return [
+        {
+          name: 'Home',
+          link: '/'
+        },
+        {
+          name: 'Nintendo',
+          link: '/antagonists/nintendo'
+        },
+        {
+          name: 'Xbox',
+          link: '/antagonists/xbox'
+        },
+        {
+          name: 'Blog',
+          link: '/blog'
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
   .header-component {
