@@ -28,14 +28,14 @@ export default {}
         margin: 13px 4px;
       }
       &.nintendo-logo {
-        font-size: 70px;
+        font-size: 65px;
         margin: 5px 10px;
       }
     }
     .versus-word-container {
       font-family: 'StreetFighter';
-      font-size: 18px;
-      margin-top: 20px;
+      font-size: 10px;
+      margin-top: 33px;
     }
   }
 </style>
