@@ -40,7 +40,8 @@ export default {
           icons: ['faHeart']
           },
       ]
-   }]
+   }],
+   '@nuxt/content'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

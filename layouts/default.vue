@@ -28,6 +28,7 @@ html {
   box-sizing: border-box;
   color: $font-color;
   min-width: 600px;
+  min-height: 100vh
 }
 
 *,

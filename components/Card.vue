@@ -4,14 +4,10 @@
       <img :src="getImgSrc()" :alt="cardData.imgName">
     </div>
     <div class="right-container">
-      <div v-if="cardData.isBlogPost" class="card-header">
-        <h3>{{ cardData.postTitle }}</h3>
-        <p>{{ cardData.postDate }}</p>
-      </div>
       <p class="card-extract">
         {{ cardData.extract }}
       </p>
-      <div v-if="!cardData.isBlogPost" class="button-container">
+      <div class="button-container">
         <Button :text="cardData.buttonText" :link="cardData.buttonLink" :show-arrow-icon="true" />
       </div>
     </div>
