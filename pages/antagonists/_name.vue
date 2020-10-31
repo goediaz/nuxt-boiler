@@ -5,7 +5,6 @@
     </header>
     <div class="content-container">
       <div class="content-left-container">
-        <p>{{ antagonistData.extract }}</p>
         <div class="content-facts">
           <h2 class="facts-title">
             Awesome {{ capitalizeFirstLetter($route.params.name) }} facts:
@@ -68,9 +67,6 @@ export default {
       justify-content: center;
       .content-left-container {
         margin-right: 10px;
-        p {
-          max-width: 900px;
-        }
         .content-facts {
           margin-top: 10px;
           .facts-title {
