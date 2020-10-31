@@ -13,6 +13,7 @@ export const mutations = {
     state.antagonistsData.xboxData = payload.xbox
   },
   savePreferredConsole (state, payload) {
+    // TODO Found a more elegant way
     if (payload.selectedConsole === 'nintendo' && !state.userPreferredConsole.xbox) {
       state.userPreferredConsole[payload.selectedConsole] = payload.value
     } else if (payload.selectedConsole === 'nintendo' && state.userPreferredConsole.xbox) {
