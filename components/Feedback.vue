@@ -4,7 +4,7 @@
     <Font-awesome v-if="!consoleLovedValue" :icon="['far', 'heart']" class="love-icon" @click="toggleHeartIcon()" />
     <Font-awesome v-if="consoleLovedValue" :icon="['fas', 'heart']" class="love-icon" @click="toggleHeartIcon()" />
     <p v-if="consoleLovedValue" class="thanks-text">
-      Thank you for voting!
+      Thanks for voting!
     </p>
   </article>
 </template>
