@@ -35,7 +35,6 @@ export default {
     }
     .stats-card-component-container {
       width: 350px;
-      height: 300px;
       .stats-card-list-component {
       width: 100%;
       background-color: $primary-color;

@@ -19,7 +19,10 @@
         </div>
       </div>
       <div class="content-right-container">
-        <StatsCard :stats="antagonistData.stats" />
+        <div class="content-stats-container">
+          <StatsCard :stats="antagonistData.stats" />
+          <Feedback :console-name="$route.params.name" />
+        </div>
       </div>
     </div>
   </article>
@@ -79,11 +82,17 @@ export default {
             ul {
               list-style-type: square;
               li {
-                // font-size: 22px;
                 margin-bottom: 10px;
               }
             }
           }
+        }
+      }
+      .content-right-container {
+        display: flex;
+        flex-direction: column;
+        .content-stats-container {
+          margin-bottom: 10px;
         }
       }
     }

@@ -31,13 +31,13 @@ export default {
       component: 'Font-awesome', 
       imports: [{
           set: '@fortawesome/free-solid-svg-icons',
-          icons: ['faChevronRight']
+          icons: ['faChevronRight', 'faHeart']
           },
           {set: '@fortawesome/free-brands-svg-icons',
           icons: ['faGithub', 'faLinkedinIn', 'faFacebook', 'faTwitter', 'faInstagram' ]
           },
           {set: '@fortawesome/free-regular-svg-icons',
-          icons: []
+          icons: ['faHeart']
           },
       ]
    }]
