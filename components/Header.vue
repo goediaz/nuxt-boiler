@@ -28,6 +28,10 @@ export default {
     formatHeaderData () {
       return [
         {
+          name: 'Home',
+          link: '/'
+        },
+        {
           name: 'Nintendo',
           link: '/antagonists/nintendo'
         },

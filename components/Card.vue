@@ -12,7 +12,7 @@
         {{ cardData.extract }}
       </p>
       <div v-if="!cardData.isBlogPost" class="button-container">
-        <Button :text="cardData.buttonText" :link="cardData.buttonLink" />
+        <Button :text="cardData.buttonText" :link="cardData.buttonLink" :show-arrow-icon="true" />
       </div>
     </div>
   </article>

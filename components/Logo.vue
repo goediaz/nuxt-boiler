@@ -1,22 +1,18 @@
 <template>
   <nuxt-link to="/" title="Home">
     <div class="logo-component-container">
-      <div class="company-logo-container nintendo-logo" title="Nintendo">
+      <div class="company-logo-container nintendo-logo">
         P
       </div>
       <div class="versus-word-container">
         VS
       </div>
-      <div class="company-logo-container xbox-logo" title="Xbox">
+      <div class="company-logo-container xbox-logo">
         L
       </div>
     </div>
   </nuxt-link>
 </template>
-
-<script>
-export default {}
-</script>
 
 <style lang="scss" scoped>
   .logo-component-container {

@@ -26,7 +26,21 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    ['nuxt-fontawesome', {
+      component: 'Font-awesome', 
+      imports: [{
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['faChevronRight']
+          },
+          {set: '@fortawesome/free-brands-svg-icons',
+          icons: ['faGithub', 'faLinkedinIn', 'faFacebook', 'faTwitter', 'faInstagram' ]
+          },
+          {set: '@fortawesome/free-regular-svg-icons',
+          icons: []
+          },
+      ]
+   }]
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
