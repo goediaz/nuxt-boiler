@@ -6,7 +6,7 @@ alt: blog post
 topic: nintendo
 ---
 
-Nintendo’s always been about the games
+#### Nintendo’s always been about the games ####
 
 <br />
 
@@ -14,7 +14,7 @@ Since the early days of Nintendo, the games have always been the main focus of t
 
 <br />
 
-The Nintendo Switch is a retro gaming monster
+#### The Nintendo Switch is a retro gaming monster ####
 
 <br />
 
@@ -22,7 +22,7 @@ If you’re a fan of Retro games then you can’t go wrong with the Nintendo Swi
 
 <br />
 
-Portability is a huge plus
+#### Portability is a huge plus ####
 
 <br />
 
@@ -30,7 +30,7 @@ The fact that you can carry the Nintendo Switch with you wherever you go is a hu
 
 <br />
 
-Couch Co-op is where it’s at
+#### Couch Co-op is where it’s at ####
 
 <br />
 
@@ -38,7 +38,7 @@ For some of us, playing games with our friends in front of the TV was how we got
 
 <br />
 
-It's a great gateway console 
+#### It's a great gateway console ####
 
 <br />
 
