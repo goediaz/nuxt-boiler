@@ -4,6 +4,7 @@ description: Just when we thought that we'd got a handle on xCloud - or Cloud Ga
 image: blog_banner.jpg
 alt: blog post
 topic: xbox
+author: Holden Navarro
 ---
 
 It was thought that the service, now available to everyone with a Game Pass Ultimate subscription, is merely a supplementary add-on for those who already own a console, and therefore not a competitor to the likes of Stadia and Amazon Luna.

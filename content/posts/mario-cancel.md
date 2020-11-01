@@ -4,6 +4,7 @@ description: Mamma mia!
 image: blog_banner.jpg
 alt: blog post
 topic: nintendo
+author: Aidan Webb
 ---
 
 When Super Mario 3D All-Stars was announced last week, Nintendo made it very clear it would be a "limited release".

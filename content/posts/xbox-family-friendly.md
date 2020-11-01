@@ -4,6 +4,7 @@ description: With the imminent arrival of the Xbox Series X and Series S, you co
 image: blog_banner.jpg
 alt: blog post
 topic: xbox
+author: Arjun Jimenez
 ---
 
 That doesn't seem to be the attitude that Phil Spencer's bringing to the table, though - the head of Xbox has been talking to a few different podcasts and channels in the last week or so, and there have been some interesting tidbits to take away from his chats. 

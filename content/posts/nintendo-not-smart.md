@@ -4,6 +4,7 @@ description: Pachter Says Nintendo Should Scrap Switch And 'Only Have Switch Lit
 image: blog_banner.jpg
 alt: blog post
 topic: nintendo
+author: Jude Nicholson
 ---
 
 If you were to ask anyone to explain the benefits of owning a Nintendo Switch, we'd argue most would demonstrate the console's ability to 'switch' between handheld and docked play. It's the entire selling point of the system after all, and having a console be so versatile can only be a good thing, right?

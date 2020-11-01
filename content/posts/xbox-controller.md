@@ -4,6 +4,7 @@ description: Microsoft has made great strides in accessibility
 image: blog_banner.jpg
 alt: blog post
 topic: xbox
+author: Kyle Stevens
 ---
 
 The Xbox Series X controller is kind of getting a raw deal. From countless unboxing videos, to general commentary on the pad itself, you’d be forgiven for thinking that Microsoft’s controller hasn’t changed at all.

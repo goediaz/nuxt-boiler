@@ -4,6 +4,7 @@ description: During the last Nintendo Direct Mini, Partner Showcase of the year,
 image: blog_banner.jpg
 alt: blog post
 topic: nintendo
+author: Ethan Francis
 ---
 
 The games featured in the video presentation include anticipated RPG sequel BRAVELY DEFAULT II; farming and lifestyle sim STORY OF SEASONS: Pioneers of Olive Town; Greek mythology-inspired action-adventure game Immortals Fenyx Rising; Nintendo Switch versions of HITMAN 3 and Control, which are both played via cloud-streaming technology; and over-the-top action game No More Heroes III. There was even the surprise reveal that the original No More Heroes and No More Heroes 2: Desperate Struggle, which originally released for the Wii system, are now available exclusively in Nintendo eShop on Nintendo Switch.

@@ -4,6 +4,7 @@ description: It’s been 4 years since the Nintendo Switch was released but the 
 image: blog_banner.jpg
 alt: blog post
 topic: nintendo
+author: Liam Moore
 ---
 
 #### Nintendo’s always been about the games ####

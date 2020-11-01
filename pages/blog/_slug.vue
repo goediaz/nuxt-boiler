@@ -11,6 +11,9 @@
     <div class="blog-content-container">
       <h1>{{ post.title }}</h1>
       <nuxt-content :document="post" />
+      <div class="blog-signature-container">
+        <i>Written by {{ post.author }}</i>
+      </div>
     </div>
   </article>
 </template>
@@ -64,6 +67,11 @@ export default {
         margin-top: 10px;
         flex-direction: column;
         width: 1000px;
+      }
+      .blog-signature-container {
+        margin: 10px;
+        width: 100%;
+        text-align: right;
       }
     }
   }
