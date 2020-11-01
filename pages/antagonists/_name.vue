@@ -73,7 +73,7 @@ export default {
         .content-facts {
           margin-top: 10px;
           .facts-title {
-            margin-bottom: 10px;
+            margin: 10px;
             text-align: center;
             text-decoration: underline;
           }
